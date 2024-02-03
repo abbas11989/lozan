@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy Phone Number</title>
+  <style>
+    body {
+        background-color: black;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+        color: yellow;
+    }
+h1{ color: red;}
+    #phoneNumber {
+      margin-bottom: 10px;
+    }
+
+    #copyButton {
+      padding: 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      
+    }
+   
+img {
+max-width: 50px;
+
+}
+    #copyButton:hover {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+<h1>اهلا بكم في مكتبة لوزان</h1>
+  <h2> اضغط على كلمة نسخ لنسخ رقم الهاتف</h2>
+  <input type="text" value="07700798489" id="phoneNumber" readonly>
+  <button id="copyButton" onclick="copyPhoneNumber()">نسخ</button>
+
+  <script>
+    function copyPhoneNumber() {
+      const phoneNumberInput = document.getElementById("phoneNumber");
+      phoneNumberInput.select();
+      document.execCommand("copy");
+      alert("تم نسخ رقم الهاتف إلى الحافظة: " + phoneNumberInput.value);
+    }
+  </script>
+  <br>
+  <br>
+  <br>
+<h2>اضغط على علامة التيليكرام للوصول الى الحساب</h2>  
+<a href="https://t.me/lozan3" > <img src ="https://w7.pngwing.com/pngs/607/1001/png-transparent-white-arrow-illustration-telegram-logo-computer-icons-social-miscellaneous-blue-angle-thumbnail.png"> </a> 
+</body>
+</html>
